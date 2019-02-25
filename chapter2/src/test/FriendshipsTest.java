@@ -3,10 +3,11 @@ package test;
 import friend.Friendships;
 import org.junit.*;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 /** 
 * Friendships Tester. 
 * 
