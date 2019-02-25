@@ -99,12 +99,12 @@ try {
 
     @Test
     public void alexDoesNotHaveFriends(){
-        Assert.assertTrue("alex does not have friends", friendships.getFriendsList("Alex").isEmpty());
+        assertThat(friendships.getFriendsList("Alex"), empty());
     }
 
     @Test
     public void joeHas5Friends(){
-        Assert.assertEquals("Joe has 5 friends", 5, friendships.getFriendsList("Joe").size());
+        assertThat(friendships.getFriendsList("Joe"), hasSize(5));
     }
 
     @Test
